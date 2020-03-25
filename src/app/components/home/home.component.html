@@ -1,0 +1,35 @@
+
+<div class="animated fadeIn">
+  <!-- Encabezado -->
+  <div class="row d-flex justify-content-center mt-5">
+    <p class="h1">Marker Maker Map</p>
+  </div>
+  <!-- Encabezado -->
+  <div class="row">
+    <!-- Mapa -->
+    <div id="mapa-mapbox" class="col-11 col-md-10 offset-md-1 mt-2" (contextmenu)="createMarker()">
+      <!-- botones -->
+      <a class="btn-floating btn-sm btn-danger"><i class="fas fa-trash-alt"></i></a>
+      <a class="btn-floating btn-sm btn-success ml-1" (click)="createMarker()"><i class="fas fa-map-marker-alt"></i></a>
+      <!-- botones -->
+    </div>
+  </div>
+ <!-- Mapa -->
+  <!-- lista de eventos -->
+  <div class="row mt-5">
+
+    <div class="col-12 col-md-5 offset-md-1  d-none d-md-block">
+      <img class="img-responsive" src="https://media.giphy.com/media/3ohhwgrL4KKPIZoTQY/giphy.gif" alt="animation">
+    </div>
+
+    <div class="col-12 col-md-5">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">1- You could use the right click to add a new marker</li>
+      <li class="list-group-item">2- You could drag tha maker with the left click</li>
+    </ul>
+  </div>
+
+  </div>
+  <!-- lista de eventos -->
+</div>
+<app-footer></app-footer>
